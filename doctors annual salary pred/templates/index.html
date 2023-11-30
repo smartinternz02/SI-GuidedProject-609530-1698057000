@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Doctors Annual Salary </title>
+    <style>
+        body{
+    background-image: url("{{ url_for('static',filename='static/doc.jpg') }}");
+background-size: cover;
+background-position: center;
+height: 109vh;
+margin: 0;
+display: flex;
+
+justify-content: center;
+}
+
+div.transbox {
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.;
+text-align: center;
+width: 400px; 
+height: 650px; 
+background-color: #212121; 
+margin: auto;
+position: absolute;
+top: 170px; bottom: 0; left: 0; right: 0
+}
+
+div.transbox p {
+
+font-weight: bold;
+color: #000000;
+}
+
+.input {
+margin: 13px;
+background: none;
+border: none;
+outline: none;
+max-width: 190px;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 9999px;
+box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+color: #fff;
+}
+.btn{
+width: 91px;
+height: 31px;
+background: greenyellow;
+border: black;
+border-radius: 13px;
+}
+.header{
+margin: 10px;
+}
+
+h2{
+color:greenyellow ;
+}
+    </style>
+</head>
+<body> 
+    
+      <div class="header">
+        <h1 >DOCTOR'S ANNUAL SALARY PREDICTOR</h1>
+      </div>
+       
+       <div class="transbox">
+
+        <form action="/login" method = "post">
+        
+
+            
+            <p><input placeholder="Work Exp (in years)" class="input" name="we" type="text"/></p>
+    
+           
+            <p><input placeholder="Current Location (in INDIA)" class="input" name="cl" type="text"/></p>
+    
+          
+            <p><input placeholder="Designation" class="input" name="deg" type="text"/></p>
+    
+                                        
+            <p><input placeholder="U.G. Course" class="input" name="ug" type="text"/></p>
+    
+            
+            <p><input placeholder="P. G. Course" class="input" name="pg" type="text"/></p>
+    
+           
+            <p><input placeholder="Age" class="input" name="age" type="text"/></p>
+              <div  >
+                <p><input type="submit" value="submit " class="btn"/></p>
+              </div>
+            
+    
+            <h2><b><i>{{y}}</i></b></h2> 
+    
+            </form>
+
+       </div>
+       
+        
+</body>
+</html>

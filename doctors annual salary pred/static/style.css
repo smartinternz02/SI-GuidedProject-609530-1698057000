@@ -1,0 +1,59 @@
+body{
+    background-image: url('doc.jpg');
+background-size: cover;
+background-position: center;
+height: 109vh;
+margin: 0;
+display: flex;
+
+justify-content: center;
+}
+
+div.transbox {
+margin: 30px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: 0.;
+text-align: center;
+width: 400px; 
+height: 650px; 
+background-color: #212121; 
+margin: auto;
+position: absolute;
+top: 110; bottom: 0; left: 0; right: 0
+}
+
+div.transbox p {
+
+font-weight: bold;
+color: #000000;
+}
+
+.input {
+margin: 13px;
+background: none;
+border: none;
+outline: none;
+max-width: 190px;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 9999px;
+box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+color: #fff;
+}
+.btn{
+width: 91px;
+height: 31px;
+background: greenyellow;
+border: black;
+border-radius: 13px;
+}
+.header{
+margin: 10px;
+}
+h1{
+color: white;
+}
+h2{
+color:greenyellow ;
+}
